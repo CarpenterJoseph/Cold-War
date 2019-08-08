@@ -1,0 +1,66 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1966.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "GER"
+
+		USA = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression_3
+				air_war_plans_division_focus
+				USA_war_department
+				new_deal
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_arsenal_of_democracy
+				USA_selective_training_act
+			}
+		}
+		SOV = {
+			history = SOV_BLITZKRIEG_DESC
+			ideology = communism
+			ideas = {
+				trotskyite_plot_purged
+				home_of_revolution
+				officers_purged
+				nkvd_2
+			}
+			focuses = {
+				SOV_move_industry_to_urals
+				SOV_claims_on_baltic
+				SOV_war_with_uk
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC ####
+		"CAN"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
